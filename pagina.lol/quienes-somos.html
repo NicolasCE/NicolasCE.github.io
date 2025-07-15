@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quiénes Somos</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Alpine.js -->
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+  <style>
+    .bg-hero {
+      background-image: url('https://images.unsplash.com/photo-1612178999935-64a6b146fbb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.75);
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+  <!-- NAVBAR -->
+  <nav class="bg-black bg-opacity-80 p-4 shadow-md z-20 relative">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="text-xl font-bold flex items-center gap-2">
+        <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/97d70637-e27c-4661-9847-08cb2f436784-profile_image-70x70.png"
+             alt="Logo SPG" class="w-8 h-8 rounded-full" />
+        Super Producciones Gaming
+      </div>
+      <div class="hidden md:flex space-x-4">
+        
+        <a href="quienes-somos.html" class="hover:underline text-indigo-400 font-semibold">Quiénes somos</a>
+        <a href="historia.html" class="hover:underline">Historia</a>
+        <a href="comunidad.html" class="hover:underline">Comunidad</a>
+        <a href="contacto.html" class="hover:underline">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
+
+ <!-- HERO QUIÉNES SOMOS -->
+<section class="relative h-[90vh] flex items-center justify-center text-center bg-cover bg-center bg-no-repeat" style="background-image: url('../img/fondo.jpeg');">
+  <!-- Capa oscura para que se lea el texto -->
+  <div class="absolute inset-0 bg-black bg-opacity-60 z-0"></div>
+
+  <!-- Contenido -->
+  <div class="relative z-10 px-6 max-w-3xl text-white">
+    <h1 class="text-5xl md:text-6xl font-extrabold uppercase mb-4 drop-shadow-md">Quiénes somos</h1>
+    <p class="text-lg md:text-xl text-gray-200 drop-shadow-sm">
+      Super Producciones Gaming no es solo un equipo, es una familia competitiva unida por la pasión del League of Legends y los e-sports.
+    </p>
+  </div>
+</section>
+
+  <!-- DETALLE DE MISIÓN -->
+  <section class="py-16 px-6 bg-gray-950 text-center">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8">Nuestra misión</h2>
+      <div class="grid md:grid-cols-3 gap-8 text-left text-gray-300">
+
+        <div class="p-4 bg-gray-800 rounded-xl shadow-md">
+          <i data-lucide="target" class="w-8 h-8 text-indigo-400 mb-3"></i>
+          <h3 class="text-xl font-semibold mb-2">Competencia real</h3>
+          <p>Luchamos por alcanzar los mejores rankings y torneos nacionales con disciplina y estrategia.</p>
+        </div>
+
+        <div class="p-4 bg-gray-800 rounded-xl shadow-md">
+          <i data-lucide="users" class="w-8 h-8 text-indigo-400 mb-3"></i>
+          <h3 class="text-xl font-semibold mb-2">Trabajo en equipo</h3>
+          <p>Creemos que la verdadera victoria viene del respeto, la sinergia y la comunicación entre jugadores.</p>
+        </div>
+
+        <div class="p-4 bg-gray-800 rounded-xl shadow-md">
+          <i data-lucide="flame" class="w-8 h-8 text-indigo-400 mb-3"></i>
+          <h3 class="text-xl font-semibold mb-2">Pasión y crecimiento</h3>
+          <p>Entrenamos, aprendemos y avanzamos juntos para evolucionar como jugadores y como personas.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FRASES DEL EQUIPO -->
+<section class="bg-black py-16 px-6">
+  <div class="max-w-5xl mx-auto text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-10">Lo que creemos</h2>
+    <div class="space-y-6">
+      <blockquote class="italic text-lg text-indigo-300">“La sinergia no se entrena, se construye.”</blockquote>
+      <blockquote class="italic text-lg text-indigo-300">“Jugamos por el escudo, no por el nombre.”</blockquote>
+      <blockquote class="italic text-lg text-indigo-300">“Cada derrota es un paso más hacia la victoria.”</blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- Imagenes -->
+<section class="bg-gray-900 py-16 px-6"></section>
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-4xl font-extrabold mb-12 text-white">League of legends es mas que un juego</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="relative overflow-hidden rounded-xl shadow-lg transform hover:scale-105 transition duration-500 ease-in-out group">
+        <img src="../img/faker.webp" alt="Faker en acción" class="w-full h-full object-cover rounded-xl" />
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <p class="text-white text-lg font-semibold">Faker: Lee Sang-Hyeok</p>
+        </div>
+      </div>
+      <div class="relative overflow-hidden rounded-xl shadow-lg transform hover:scale-105 transition duration-500 ease-in-out group">
+        <img src="../img/Worlds.webp" alt="Finales de Worlds" class="w-full h-full object-cover rounded-xl" />
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <p class="text-white text-lg font-semibold">La Gloria de Worlds</p>
+        </div>
+      </div>
+      <div class="relative overflow-hidden rounded-xl shadow-lg transform hover:scale-105 transition duration-500 ease-in-out group">
+        <img src="../img/LCS.jpg" alt="Escenario de la LCS" class="w-full h-full object-cover rounded-xl" />
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <p class="text-white text-lg font-semibold">El Campo de Batalla de la LCS</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-gray-950 py-20 px-6">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-4xl font-extrabold mb-14 text-white">Nuestros Sponsors</h2>
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-12 items-center justify-center">
+
+      <div class="flex items-center justify-center p-4 bg-gray-800 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+        <img src="../img/razer.svg" alt="Razer Logo" class="h-14 md:h-16 w-auto opacity-90 hover:opacity-100 transition-opacity duration-300 filter grayscale hover:grayscale-0" />
+      </div>
+
+      <div class="flex items-center justify-center p-4 bg-gray-800 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+        <img src="../img/HyperX.png" alt="HyperX Logo" class="h-14 md:h-16 w-auto opacity-90 hover:opacity-100 transition-opacity duration-300 filter grayscale hover:grayscale-0" />
+      </div>
+
+      <div class="flex items-center justify-center p-4 bg-gray-800 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+        <img src="../img/logi.png" alt="Logitech Logo" class="h-12 md:h-14 w-auto opacity-90 hover:opacity-100 transition-opacity duration-300 filter grayscale hover:grayscale-0" />
+      </div>
+
+      <div class="flex items-center justify-center p-4 bg-gray-800 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+        <img src="../img/NVIDIA.png" alt="NVIDIA Logo" class="h-12 md:h-14 w-auto opacity-90 hover:opacity-100 transition-opacity duration-300 filter grayscale hover:grayscale-0" />
+      </div>
+
+      </div>
+  </div>
+</section>
+
+
+  <script>
+    lucide.createIcons();
+  </script>
+
+</body>
+
+<!-- Estilos personalizados -->
+<style>
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+</style>
+
+<!-- Nube e iconos -->
+<div x-data="{ open: false }" class="fixed bottom-20 right-6 z-50 flex flex-col-reverse items-end gap-3">
+
+  <!-- Nube principal -->
+  <button @click="open = !open"
+          class="bg-white px-4 py-2 rounded-full shadow-xl flex items-center gap-2 animate-float hover:scale-105 transition-all">
+    <img src="https://cdn-icons-png.flaticon.com/512/703/703198.png" alt="Nube" class="w-6 h-6" />
+    <span class="text-sm font-semibold text-gray-800 hidden md:inline">¡Síguenos!</span>
+  </button>
+
+   <!-- Iconos horizontales debajo -->
+   <div x-show="open" x-transition
+   class="flex items-center justify-end gap-3 pr-2">
+   
+<!-- Twitch -->
+<a href="https://www.twitch.tv/super_producciones" target="_blank"
+   class="bg-white p-2 rounded-full shadow-md hover:scale-110 transition">
+  <img src="https://cdn-icons-png.flaticon.com/512/2111/2111668.png" alt="Twitch" class="w-6 h-6" />
+</a>
+
+<!-- Instagram -->
+<a href="https://www.instagram.com/super.producciones/" target="_blank"
+   class="bg-white p-2 rounded-full shadow-md hover:scale-110 transition">
+  <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" class="w-6 h-6" />
+</a>
+
+<!-- Discord -->
+<a href="https://discord.gg/uMSffHVA" target="_blank"
+   class="bg-white p-2 rounded-full shadow-md hover:scale-110 transition">
+  <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord" class="w-6 h-6" />
+</a>
+</div>
+</div>
+
+</html>

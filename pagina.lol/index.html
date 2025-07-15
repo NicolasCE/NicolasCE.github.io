@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SPG - Equipo de Esports</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Alpine.js -->
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+  <style>
+    .hero {
+      background-image: url('https://cdn.mos.cms.futurecdn.net/BtK9W9ZDYj2kuBrKPkZ3n5.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.75);
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+  <!-- NAVBAR -->
+  <nav class="bg-black bg-opacity-80 p-4 shadow-md z-20 relative">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="text-xl font-bold flex items-center gap-2">
+        <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/97d70637-e27c-4661-9847-08cb2f436784-profile_image-70x70.png"
+             alt="Logo SPG" class="w-8 h-8 rounded-full" />
+             Super Producciones Gaming
+      </div>
+      <div class="hidden md:flex space-x-4">
+        <a href="quienes-somos.html" class="hover:underline">Quiénes somos</a>
+        <a href="historia.html" class="hover:underline">Historia</a>
+        <a href="comunidad.html" class="hover:underline">Comunidad</a>
+        <a href="contacto.html" class="hover:underline">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero relative h-[90vh] flex items-center justify-center text-center">
+    <div class="overlay absolute inset-0 z-0"></div>
+    <div class="relative z-10 max-w-3xl px-6">
+      <h1 class="text-5xl md:text-6xl font-extrabold mb-4 uppercase tracking-tight">Bienvenido a Super Producciones</h1>
+      <p class="text-xl md:text-2xl text-gray-300 mb-8">Explora con nosotros el competitivo en este team de e-sports</p>
+      <a href="quienes-somos.html" class="inline-block px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-semibold shadow-md transition-all duration-300">
+        Conócenos
+      </a>
+    </div>
+  </section>
+
+  <!-- SECCIÓN DESTACADA -->
+  <section class="py-16 px-6 text-center bg-gray-950">
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">Entrena. Compite. Domina.</h2>
+    <p class="text-lg text-gray-400 max-w-2xl mx-auto">Super Producciones Gaming es un equipo dedicado a destacar en la Grieta del Invocador, con pasión, estrategia y trabajo en equipo. Únete a la experiencia competitiva.</p>
+  </section>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+
+<!-- Estilos personalizados -->
+<style>
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+</style>
+
+<!-- Nube e iconos -->
+<div x-data="{ open: false }" class="fixed bottom-20 right-6 z-50 flex flex-col-reverse items-end gap-3">
+
+  <!-- Nube principal -->
+  <button @click="open = !open"
+          class="bg-white px-4 py-2 rounded-full shadow-xl flex items-center gap-2 animate-float hover:scale-105 transition-all">
+    <img src="https://cdn-icons-png.flaticon.com/512/703/703198.png" alt="Nube" class="w-6 h-6" />
+    <span class="text-sm font-semibold text-gray-800 hidden md:inline">¡Síguenos!</span>
+  </button>
+
+   <!-- Iconos horizontales debajo -->
+   <div x-show="open" x-transition
+   class="flex items-center justify-end gap-3 pr-2">
+   
+<!-- Twitch -->
+<a href="https://www.twitch.tv/super_producciones" target="_blank"
+   class="bg-white p-2 rounded-full shadow-md hover:scale-110 transition">
+  <img src="https://cdn-icons-png.flaticon.com/512/2111/2111668.png" alt="Twitch" class="w-6 h-6" />
+</a>
+
+<!-- Instagram -->
+<a href="https://www.instagram.com/super.producciones/" target="_blank"
+   class="bg-white p-2 rounded-full shadow-md hover:scale-110 transition">
+  <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" class="w-6 h-6" />
+</a>
+
+<!-- Discord -->
+<a href="https://discord.gg/uMSffHVA" target="_blank"
+   class="bg-white p-2 rounded-full shadow-md hover:scale-110 transition">
+  <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord" class="w-6 h-6" />
+</a>
+</div>
+</div>
+</div>
+</html>

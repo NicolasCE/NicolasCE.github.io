@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comunidad - Super Producciones Gaming</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <style>
+      .bg-hero {
+        background-image: url("https://images.unsplash.com/photo-1607093800858-6c32d9b69b0f?auto=format&fit=crop&w=1950&q=80");
+        background-size: cover;
+        background-position: center;
+      }
+      .overlay {
+        background-color: rgba(0, 0, 0, 0.75);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body class="bg-gray-900 text-white font-sans">
+    <!-- NAVBAR -->
+    <nav class="bg-black bg-opacity-80 p-4 shadow-md z-20 relative">
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="text-xl font-bold flex items-center gap-2">
+          <img
+            src="https://static-cdn.jtvnw.net/jtv_user_pictures/97d70637-e27c-4661-9847-08cb2f436784-profile_image-70x70.png"
+            alt="Logo SPG"
+            class="w-8 h-8 rounded-full"
+          />
+          Super Producciones Gaming
+        </div>
+        <div class="hidden md:flex space-x-4">
+          <a href="quienes-somos.html" class="hover:underline">Quiénes somos</a>
+          <a
+            href="historia.html"
+            class="hover:underline text-indigo-400 font-semibold"
+            >Historia</a
+          >
+          <a href="comunidad.html" class="hover:underline">Comunidad</a>
+          <a href="contacto.html" class="hover:underline">Contacto</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section
+      class="bg-hero h-[70vh] flex items-center justify-center text-center relative"
+    >
+      <div class="overlay absolute inset-0 z-0"></div>
+      <div class="relative z-10 px-6 max-w-3xl">
+        <h1 class="text-5xl md:text-6xl font-extrabold uppercase mb-4">
+          Nuestra Comunidad
+        </h1>
+        <p class="text-lg md:text-xl text-gray-300">
+          Más que jugadores. Somos familia.
+        </p>
+      </div>
+    </section>
+
+    <!-- Asegúrate de incluir Alpine.js en tu archivo HTML -->
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+
+    <section class="bg-gray-950 py-20 px-6">
+      <div class="max-w-6xl mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-12 text-white">Escuadras SPG</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+          <!-- TARJETA: SPG Omega -->
+          <div
+            x-data="{ flipped: false }"
+            @click="flipped = !flipped"
+            class="cursor-pointer [perspective:1000px]"
+          >
+            <div
+              :class="flipped ? '[transform:rotateY(180deg)]' : ''"
+              class="relative h-72 w-full transition-transform duration-700 [transform-style:preserve-3d]"
+            >
+              <!-- Frente -->
+              <div
+                class="absolute inset-0 rounded-xl overflow-hidden shadow-md [backface-visibility:hidden]"
+              >
+                <img
+                  src="../img/lng.webp"
+                  alt="SPG Omega"
+                  class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500"
+                />
+                <div
+                  class="absolute inset-0 bg-black bg-opacity-40 flex items-end p-4"
+                >
+                  <h3 class="text-white text-2xl font-semibold">SPG Omega</h3>
+                </div>
+              </div>
+
+              <!-- Reverso -->
+              <div
+                class="absolute inset-0 bg-gray-800 rounded-xl shadow-md [transform:rotateY(180deg)] [backface-visibility:hidden] flex flex-col justify-center items-center text-white p-6 text-center"
+              >
+                <h3 class="text-2xl font-bold mb-2 text-indigo-400">
+                  Escuadra Omega
+                </h3>
+                <p class="text-gray-300 text-sm">
+                  Academia de SPG<br />Jugadores Elo Esmeralda a Diamante 4<br />En
+                  formación para escuadras principales.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- TARJETA: SPG Beta -->
+          <div
+            x-data="{ flipped: false }"
+            @click="flipped = !flipped"
+            class="cursor-pointer [perspective:1000px]"
+          >
+            <div
+              :class="flipped ? '[transform:rotateY(180deg)]' : ''"
+              class="relative h-72 w-full transition-transform duration-700 [transform-style:preserve-3d]"
+            >
+              <div
+                class="absolute inset-0 rounded-xl overflow-hidden shadow-md [backface-visibility:hidden]"
+              >
+                <img
+                  src="../img/t1.png"
+                  alt="SPG Beta"
+                  class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500"
+                />
+                <div
+                  class="absolute inset-0 bg-black bg-opacity-40 flex items-end p-4"
+                >
+                  <h3 class="text-white text-2xl font-semibold">SPG Beta</h3>
+                </div>
+              </div>
+
+              <div
+                class="absolute inset-0 bg-gray-800 rounded-xl shadow-md [transform:rotateY(180deg)] [backface-visibility:hidden] flex flex-col justify-center items-center text-white p-6 text-center"
+              >
+                <h3 class="text-2xl font-bold mb-2 text-indigo-400">
+                  Escuadra Beta
+                </h3>
+                <p class="text-gray-300 text-sm">
+                  Elo Diamante 2 hasta Master<br />Scrims semanales y
+                  competencias oficiales.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- TARJETA: SPG Epsilon -->
+          <div
+            x-data="{ flipped: false }"
+            @click="flipped = !flipped"
+            class="cursor-pointer [perspective:1000px]"
+          >
+            <div
+              :class="flipped ? '[transform:rotateY(180deg)]' : ''"
+              class="relative h-72 w-full transition-transform duration-700 [transform-style:preserve-3d]"
+            >
+              <div
+                class="absolute inset-0 rounded-xl overflow-hidden shadow-md [backface-visibility:hidden]"
+              >
+                <img
+                  src="../img/evo.png"
+                  alt="SPG Epsilon"
+                  class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500"
+                />
+                <div
+                  class="absolute inset-0 bg-black bg-opacity-40 flex items-end p-4"
+                >
+                  <h3 class="text-white text-2xl font-semibold">SPG Epsilon</h3>
+                </div>
+              </div>
+
+              <div
+                class="absolute inset-0 bg-gray-800 rounded-xl shadow-md [transform:rotateY(180deg)] [backface-visibility:hidden] flex flex-col justify-center items-center text-white p-6 text-center"
+              >
+                <h3 class="text-2xl font-bold mb-2 text-indigo-400">
+                  Escuadra Epsilon
+                </h3>
+                <p class="text-gray-300 text-sm">
+                  GM a Challenger<br />Alto rendimiento, equipo élite.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- TARJETA: SPG Galácticos -->
+          <div
+            x-data="{ flipped: false }"
+            @click="flipped = !flipped"
+            class="cursor-pointer [perspective:1000px]"
+          >
+            <div
+              :class="flipped ? '[transform:rotateY(180deg)]' : ''"
+              class="relative h-72 w-full transition-transform duration-700 [transform-style:preserve-3d]"
+            >
+              <div
+                class="absolute inset-0 rounded-xl overflow-hidden shadow-md [backface-visibility:hidden]"
+              >
+                <img
+                  src="../img/lol.png"
+                  alt="SPG Galácticos"
+                  class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500"
+                />
+                <div
+                  class="absolute inset-0 bg-black bg-opacity-40 flex items-end p-4"
+                >
+                  <h3 class="text-white text-2xl font-semibold">
+                    SPG Galácticos
+                  </h3>
+                </div>
+              </div>
+
+              <div
+                class="absolute inset-0 bg-gray-800 rounded-xl shadow-md [transform:rotateY(180deg)] [backface-visibility:hidden] flex flex-col justify-center items-center text-white p-6 text-center"
+              >
+                <h3 class="text-2xl font-bold mb-2 text-indigo-400">
+                  Galácticos
+                </h3>
+                <p class="text-gray-300 text-sm">
+                  Influencers, showmatches, eventos especiales y representantes
+                  SPG.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- TARJETA: SPG Fantasy -->
+          <div
+            x-data="{ flipped: false }"
+            @click="flipped = !flipped"
+            class="cursor-pointer [perspective:1000px]"
+          >
+            <div
+              :class="flipped ? '[transform:rotateY(180deg)]' : ''"
+              class="relative h-72 w-full transition-transform duration-700 [transform-style:preserve-3d]"
+            >
+              <div
+                class="absolute inset-0 rounded-xl overflow-hidden shadow-md [backface-visibility:hidden]"
+              >
+                <img
+                  src="../img/isurus"
+                  alt="SPG Fantasy"
+                  class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500"
+                />
+                <div
+                  class="absolute inset-0 bg-black bg-opacity-40 flex items-end p-4"
+                >
+                  <h3 class="text-white text-2xl font-semibold">SPG Fantasy</h3>
+                </div>
+              </div>
+
+              <div
+                class="absolute inset-0 bg-gray-800 rounded-xl shadow-md [transform:rotateY(180deg)] [backface-visibility:hidden] flex flex-col justify-center items-center text-white p-6 text-center"
+              >
+                <h3 class="text-2xl font-bold mb-2 text-indigo-400">Fantasy</h3>
+                <p class="text-gray-300 text-sm">
+                  Jugadores retirados o inactivos que dejaron huella.
+                  Legendarios roba puntos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN EMPRESARIAL COMUNIDAD -->
+    <section class="bg-gray-950 py-16 px-6">
+      <div class="max-w-6xl mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-4 text-white">Nuestra Comunidad</h2>
+        <p class="text-lg text-gray-400 mb-8 max-w-3xl mx-auto">
+          En SPG, no solo jugamos. Construimos relaciones, formamos líderes y
+          creamos oportunidades. Nuestra comunidad impulsa el crecimiento de los
+          esports con responsabilidad y visión.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 text-left">
+          <div
+            class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-indigo-700 transition"
+          >
+            <h3 class="text-xl font-semibold mb-2 text-indigo-400">
+              Inclusión y liderazgo
+            </h3>
+            <p class="text-gray-300">
+              Cualquiera puede formar parte del proyecto, sin importar su nivel.
+              SPG impulsa talentos en un entorno positivo y competitivo.
+            </p>
+          </div>
+
+          <div
+            class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-indigo-700 transition"
+          >
+            <h3 class="text-xl font-semibold mb-2 text-indigo-400">
+              Eventos & torneos
+            </h3>
+            <p class="text-gray-300">
+              Organizamos ligas internas, watchparties, prácticas abiertas y
+              actividades que fomentan el compañerismo y la estrategia.
+            </p>
+          </div>
+
+          <div
+            class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-indigo-700 transition"
+          >
+            <h3 class="text-xl font-semibold mb-2 text-indigo-400">
+              Un ecosistema vivo
+            </h3>
+            <p class="text-gray-300">
+              Nuestra comunidad vive en Discord, Twitch e Instagram. Compartimos
+              logros, partidas, memes y aprendizaje.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-10">
+          <a
+            href="https://discord.gg/uMSffHVA"
+            target="_blank"
+            class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-8 py-3 rounded-lg shadow-lg transition-all"
+          >
+            Únete a nuestro Discord
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN TWITCH EN VIVO -->
+    <section class="bg-black py-16 px-6" data-aos="fade-up">
+      <div class="max-w-6xl mx-auto text-center">
+        <h2 class="text-4xl font-bold text-white mb-4">📺 Estamos en vivo</h2>
+        <p class="text-gray-400 mb-8">
+          Disfruta nuestras partidas, entrenamientos y eventos de Super
+          Producciones en tiempo real.
+        </p>
+        <div class="flex justify-center overflow-x-auto">
+          <iframe
+            src="https://player.twitch.tv/?channel=super_producciones&parent=localhost"
+            height="480"
+            width="854"
+            allowfullscreen
+            class="rounded-lg shadow-lg border-2 border-indigo-600"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <!-- Estilos personalizados -->
+  <style>
+    @keyframes float {
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-8px);
+      }
+    }
+
+    .animate-float {
+      animation: float 3s ease-in-out infinite;
+    }
+  </style>
+
+  <!-- Nube e iconos -->
+  <div
+    x-data="{ open: false }"
+    class="fixed bottom-20 right-6 z-50 flex flex-col-reverse items-end gap-3"
+  >
+    <!-- Nube principal -->
+    <button
+      @click="open = !open"
+      class="bg-white px-4 py-2 rounded-full shadow-xl flex items-center gap-2 animate-float hover:scale-105 transition-all"
+    >
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/703/703198.png"
+        alt="Nube"
+        class="w-6 h-6"
+      />
+      <span class="text-sm font-semibold text-gray-800 hidden md:inline"
+        >¡Síguenos!</span
+      >
+    </button>
+
+    <!-- Iconos horizontales debajo -->
+    <div
+      x-show="open"
+      x-transition
+      class="flex items-center justify-end gap-3 pr-2"
+    >
+      <!-- Twitch -->
+      <a
+        href="https://www.twitch.tv/super_producciones"
+        target="_blank"
+        class="bg-white p-2 rounded-full shadow-md hover:scale-110 transition"
+      >
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/2111/2111668.png"
+          alt="Twitch"
+          class="w-6 h-6"
+        />
+      </a>
+
+      <!-- Instagram -->
+      <a
+        href="https://www.instagram.com/super.producciones/"
+        target="_blank"
+        class="bg-white p-2 rounded-full shadow-md hover:scale-110 transition"
+      >
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+          alt="Instagram"
+          class="w-6 h-6"
+        />
+      </a>
+
+      <!-- Discord -->
+      <a
+        href="https://discord.gg/uMSffHVA"
+        target="_blank"
+        class="bg-white p-2 rounded-full shadow-md hover:scale-110 transition"
+      >
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png"
+          alt="Discord"
+          class="w-6 h-6"
+        />
+      </a>
+    </div>
+  </div>
+</html>
